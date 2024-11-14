@@ -7,28 +7,30 @@ Si dos lados son iguales, mostrar "Triángulo isósceles".
 Si todos los lados son diferentes, mostrar "Triángulo escaleno".
 Si la suma de dos lados no es mayor que el tercer lado, mostrar "No es un triángulo".*/
 import java.util.Scanner;
+
 public class ClasificaciondeunTriangulo {
+
     public static void main(String[] args) {
         Scanner tcl = new Scanner(System.in);
         double lado1, lado2, lado3;
         System.out.println("Dame los 3 lados: ");
-        lado1 =tcl.nextDouble();
-        lado2 =tcl.nextDouble();
+        lado1 = tcl.nextDouble();
+        lado2 = tcl.nextDouble();
         lado3 = tcl.nextDouble();
-        
-        if ((lado1==lado2)&&(lado2==lado3)&&(lado1==lado3)){
+
+        if ((lado1 == lado2) && (lado2 == lado3) && (lado1 == lado3)) {
             System.out.println("Es un triangulo equilatero");
         }
         if ((lado1 + lado2) <= lado3 || (lado1 + lado3) <= lado2 || (lado2 + lado3) <= lado1) {
             System.out.println("No es un triángulo");
         }
-        if ((lado1 ==lado2)||(lado2==lado3)||(lado3==lado1)){
+        if ((lado1 == lado2) || (lado2 == lado3) || (lado3 == lado1)) {
             System.out.println("Es un triangulo isoceles");
         }
-        if ((lado1!=lado2)&&(lado2!=lado3)&&(lado3!=lado1)){
+        if ((lado1 != lado2) && (lado2 != lado3) && (lado3 != lado1)) {
             System.out.println("Es un triangulo escaleno");
         }
-        
+
     }
 }
 /*run:

@@ -21,7 +21,7 @@ public class CostoEnvioPaquete {
             System.out.println("el costo es de 5$");
         } else if ((peso >= 5) && (peso <= 10) && (local.equals("nacional"))) {
             System.out.println("El costo total es 10$");
-            }else{
+        } else {
             System.out.println("El costo total es 15$");
         }
     }
