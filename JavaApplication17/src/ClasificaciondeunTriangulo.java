@@ -24,7 +24,7 @@ public class ClasificaciondeunTriangulo {
         if ((lado1 + lado2) <= lado3 || (lado1 + lado3) <= lado2 || (lado2 + lado3) <= lado1) {
             System.out.println("No es un triángulo");
         }
-        if ((lado1 == lado2) || (lado2 == lado3) || (lado3 == lado1)) {
+        if (((lado1 == lado2)&&(lado1 != lado3)) || ((lado2 == lado3)&&(lado3 != lado1)) || ((lado3 == lado1)&&(lado1 != lado2))) {
             System.out.println("Es un triangulo isoceles");
         }
         if ((lado1 != lado2) && (lado2 != lado3) && (lado3 != lado1)) {
@@ -35,7 +35,7 @@ public class ClasificaciondeunTriangulo {
 }
 /*run:
 Dame los 3 lados: 
-5 5 4
+4 4 2
 Es un triangulo isoceles
-BUILD SUCCESSFUL (total time: 5 seconds)
+BUILD SUCCESSFUL (total time: 10 seconds)
 */
